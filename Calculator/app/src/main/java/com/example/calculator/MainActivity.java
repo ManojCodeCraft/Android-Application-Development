@@ -208,6 +208,7 @@ public class MainActivity extends AppCompatActivity {
                 String val=tvmain.getText().toString();
                 double r=Math.sqrt(Double.parseDouble(val));
                 tvmain.setText(String.valueOf(r));
+                tvsec.setText("√"+val);
             }
         });
         ba.setOnClickListener(new View.OnClickListener() {
@@ -222,7 +223,7 @@ public class MainActivity extends AppCompatActivity {
                 double d=Double.parseDouble(tvmain.getText().toString());
                 double square=d*d;
                 tvmain.setText(String.valueOf(square));
-                tvsec.setText(d+"2");
+                tvsec.setText(d+"²");
             }
         });
         bpi.setOnClickListener(new View.OnClickListener() {
